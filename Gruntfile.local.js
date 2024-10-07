@@ -28,7 +28,6 @@ module.exports = function(grunt) {
         expand: true,
         src: ['*.less', '**/*.less'],
         filter: function(filepath) {
-          console.log(filepath);
           return !excludedFiles.includes(filepath);
         },
         ext: '.scss'
